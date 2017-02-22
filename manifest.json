@@ -2,7 +2,7 @@
   "manifest_version": 2,
 
   "name": "Blow Hint",
-  "description": "This extension shows a Google Image search result for the current page",
+  "description": "Chrome extension to hide hints/tags while practicing competitive programming.",
   "version": "1.0",
 
   "browser_action": {
