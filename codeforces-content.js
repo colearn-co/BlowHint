@@ -1,3 +1,4 @@
+
 var tags = document.querySelectorAll('#sidebar .tag-box');
 
 if(tags.length > 0) {

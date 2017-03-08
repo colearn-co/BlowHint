@@ -16,12 +16,20 @@
     "48": "images/icon48.png",
     "128": "images/icon128.png" 
   },
-  "content_scripts": [{
-    "matches": ["*://*.codeforces.com/*/problem/*"],
-    "js": ["content.js"]
-  }],
+  "content_scripts": [
+    {
+      "matches": ["*://*.codeforces.com/*/problem/*"],
+      "js": ["codeforces-content.js"],
+      "run_at": "document_end"
+    },
+    {
+      "matches": ["*://*.spoj.com/problems/*"],
+      "js": ["spoj-content.js"],
+      "css": ["spoj-content.css"],
+      "run_at": "document_end"
+    }
+  ],
   "permissions": [
-    "tabs", "*://*.codeforces.com/*",
-    "activeTab"
+    "*://*.spoj.com/*", "*://*.codeforces.com/*"
   ]
 }
